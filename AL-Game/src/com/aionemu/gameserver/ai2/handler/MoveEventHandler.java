@@ -39,6 +39,7 @@ public class MoveEventHandler {
 	}
 
 	/**
+	 * Inicio do processamento de movimento e ataques
 	 * @param npcAI
 	 */
 	public static final void onMoveArrived(NpcAI2 npcAI) {

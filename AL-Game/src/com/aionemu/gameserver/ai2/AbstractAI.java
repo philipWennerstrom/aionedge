@@ -180,6 +180,9 @@ public abstract class AbstractAI implements AI2 {
 		return true;
 	}
 
+	/**
+	 * Lida com eventos de um NPC. Geralmente tudo começa por aqui
+	 */
 	@Override
 	public void onGeneralEvent(AIEventType event) {
 		if (canHandleEvent(event)) {

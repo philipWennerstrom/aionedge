@@ -330,6 +330,7 @@ public abstract class CreatureController<T extends Creature> extends VisibleObje
 			damage += result.getDamage();
 		}
 
+		//Envia o calculo de damage para o cliente
 		PacketSendUtility.broadcastPacketAndReceive(getOwner(), new SM_ATTACK(getOwner(), target, getOwner().getGameStats()
 				.getAttackCounter(), time, attackType, attackResult));
 
