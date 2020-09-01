@@ -1,0 +1,143 @@
+12:56:04.377 INFO [main]: com.aionemu.chatserver.configs.Config [Config.java:104] - Loading: mycs.properties
+12:56:04.380 INFO [main]: com.aionemu.chatserver.configs.Config [Config.java:108] - No override properties found
+12:56:04.390 INFO [main]: com.aionemu.chatserver.configs.Config [Config.java:114] - Loading: commons.properties
+12:56:04.401 INFO [main]: com.aionemu.chatserver.configs.Config [Config.java:116] - Loading: chatserver.properties
+12:56:04.405 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:117] - OS: Windows 8 Build: 6.2
+12:56:04.405 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:117] - OS Arch: amd64
+12:56:04.405 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:117] - ..................................................
+12:56:04.405 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:117] - ..................................................
+12:56:04.407 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:112] - Available CPU(s): 8
+12:56:04.407 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:112] - Processor(s) Identifier: Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+12:56:04.407 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:112] - ..................................................
+12:56:04.407 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:112] - ..................................................
+12:56:04.407 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:122] - Java Platform Information
+12:56:04.407 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:122] - Java Runtime  Name: Java(TM) SE Runtime Environment
+12:56:04.408 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:122] - Java Version: 1.7.0_21
+12:56:04.408 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:122] - Java Class Version: 51.0
+12:56:04.408 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:122] - ..................................................
+12:56:04.408 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:122] - ..................................................
+12:56:04.408 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:127] - Virtual Machine Information (JVM)
+12:56:04.408 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:127] - JVM Name: Java HotSpot(TM) 64-Bit Server VM
+12:56:04.408 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:127] - JVM installation directory: C:\Program Files\Java\jre7
+12:56:04.409 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:127] - JVM version: 23.21-b01
+12:56:04.409 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:127] - JVM Vendor: Oracle Corporation
+12:56:04.409 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:127] - JVM Info: mixed mode
+12:56:04.409 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:127] - ..................................................
+12:56:04.409 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:127] - ..................................................
+12:56:04.411 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:107] - +----
+12:56:04.411 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:107] - | Global Memory Informations at 12:56:04:
+12:56:04.411 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:107] - |    |
+12:56:04.411 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:107] - | Allowed Memory: 62848 KB
+12:56:04.411 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:107] - |    |= Allocated Memory: 62848 KB (100,0000%)
+12:56:04.411 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:107] - |    |= Non-Allocated Memory: 0 KB (0,0000%)
+12:56:04.412 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:107] - | Allocated Memory: 62848 KB
+12:56:04.412 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:107] - |    |= Used Memory: 14391 KB (22,8981%)
+12:56:04.412 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:107] - |    |= Unused (cached) Memory: 48457 KB (77,1019%)
+12:56:04.412 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:107] - | Useable Memory: 48457 KB (77,1019%)
+12:56:04.412 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:107] - +----
+12:56:04.513 INFO [main]: com.aionemu.commons.network.NioServer [NioServer.java:121] - Server listening on IP: 127.0.0.1 Port 9021 for Gs Connections
+12:56:04.515 INFO [main]: com.aionemu.chatserver.ChatServer [ChatServer.java:116] - AL Chat Server started in 0 seconds.
+12:56:12.775 INFO [Accept Dispatcher]: com.aionemu.chatserver.network.gameserver.GsConnection [GsConnection.java:107] - Gameserver connection attemp from: 127.0.0.1
+12:56:12.782 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_CS_AUTH [CM_CS_AUTH.java:70] - Gameserver #36 is now online.
+12:58:16.461 INFO [pool-2-thread-2]: com.aionemu.chatserver.network.netty.handler.ClientChannelHandler [ClientChannelHandler.java:61] - Channel connected Ip:127.0.0.1
+12:59:36.387 INFO [pool-2-thread-24]: com.aionemu.chatserver.network.netty.handler.AbstractChannelHandler [AbstractChannelHandler.java:55] - Channel disconnected IP: 127.0.0.1
+12:59:36.390 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101225
+13:00:21.058 INFO [pool-2-thread-27]: com.aionemu.chatserver.network.netty.handler.ClientChannelHandler [ClientChannelHandler.java:61] - Channel connected Ip:127.0.0.1
+13:01:03.127 INFO [pool-2-thread-39]: com.aionemu.chatserver.network.netty.handler.AbstractChannelHandler [AbstractChannelHandler.java:55] - Channel disconnected IP: 127.0.0.1
+13:01:03.134 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101225
+13:03:31.515 INFO [pool-2-thread-43]: com.aionemu.chatserver.network.netty.handler.ClientChannelHandler [ClientChannelHandler.java:61] - Channel connected Ip:127.0.0.1
+13:13:55.804 INFO [pool-2-thread-114]: com.aionemu.chatserver.network.netty.handler.AbstractChannelHandler [AbstractChannelHandler.java:55] - Channel disconnected IP: 127.0.0.1
+13:13:55.805 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101225
+13:15:40.437 INFO [pool-5-thread-1]: com.aionemu.chatserver.service.GameServerService [GameServerService.java:68] - Gameserver #36 is disconnected
+13:18:40.071 INFO [Accept Dispatcher]: com.aionemu.chatserver.network.gameserver.GsConnection [GsConnection.java:107] - Gameserver connection attemp from: 127.0.0.1
+13:18:40.098 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_CS_AUTH [CM_CS_AUTH.java:70] - Gameserver #36 is now online.
+13:21:02.046 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101240
+13:21:25.941 INFO [pool-5-thread-1]: com.aionemu.chatserver.service.GameServerService [GameServerService.java:68] - Gameserver #36 is disconnected
+13:26:00.328 INFO [Accept Dispatcher]: com.aionemu.chatserver.network.gameserver.GsConnection [GsConnection.java:107] - Gameserver connection attemp from: 127.0.0.1
+13:26:00.330 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_CS_AUTH [CM_CS_AUTH.java:70] - Gameserver #36 is now online.
+13:27:46.766 INFO [pool-2-thread-116]: com.aionemu.chatserver.network.netty.handler.ClientChannelHandler [ClientChannelHandler.java:61] - Channel connected Ip:127.0.0.1
+13:29:03.909 INFO [pool-2-thread-135]: com.aionemu.chatserver.network.netty.handler.AbstractChannelHandler [AbstractChannelHandler.java:55] - Channel disconnected IP: 127.0.0.1
+13:29:14.466 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101240
+13:29:18.852 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101240
+13:29:55.280 INFO [pool-2-thread-138]: com.aionemu.chatserver.network.netty.handler.ClientChannelHandler [ClientChannelHandler.java:61] - Channel connected Ip:127.0.0.1
+13:30:55.496 INFO [pool-2-thread-155]: com.aionemu.chatserver.network.netty.handler.ClientChannelHandler [ClientChannelHandler.java:61] - Channel connected Ip:127.0.0.1
+13:31:36.174 INFO [pool-2-thread-178]: com.aionemu.chatserver.network.netty.handler.AbstractChannelHandler [AbstractChannelHandler.java:55] - Channel disconnected IP: 127.0.0.1
+13:31:36.178 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101240
+13:31:59.477 INFO [pool-2-thread-183]: com.aionemu.chatserver.network.netty.handler.ClientChannelHandler [ClientChannelHandler.java:61] - Channel connected Ip:127.0.0.1
+13:33:38.424 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101263
+13:33:38.425 INFO [pool-2-thread-211]: com.aionemu.chatserver.network.netty.handler.AbstractChannelHandler [AbstractChannelHandler.java:55] - Channel disconnected IP: 127.0.0.1
+13:33:40.605 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101240
+13:33:40.605 INFO [pool-2-thread-215]: com.aionemu.chatserver.network.netty.handler.AbstractChannelHandler [AbstractChannelHandler.java:55] - Channel disconnected IP: 127.0.0.1
+13:34:14.178 INFO [pool-5-thread-1]: com.aionemu.chatserver.service.GameServerService [GameServerService.java:68] - Gameserver #36 is disconnected
+13:43:03.905 INFO [Accept Dispatcher]: com.aionemu.chatserver.network.gameserver.GsConnection [GsConnection.java:107] - Gameserver connection attemp from: 127.0.0.1
+13:43:03.908 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_CS_AUTH [CM_CS_AUTH.java:70] - Gameserver #36 is now online.
+13:50:29.988 INFO [pool-2-thread-218]: com.aionemu.chatserver.network.netty.handler.ClientChannelHandler [ClientChannelHandler.java:61] - Channel connected Ip:127.0.0.1
+13:52:33.749 INFO [pool-2-thread-242]: com.aionemu.chatserver.network.netty.handler.AbstractChannelHandler [AbstractChannelHandler.java:55] - Channel disconnected IP: 127.0.0.1
+13:52:33.760 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101240
+13:53:41.716 INFO [pool-2-thread-245]: com.aionemu.chatserver.network.netty.handler.ClientChannelHandler [ClientChannelHandler.java:61] - Channel connected Ip:127.0.0.1
+13:55:06.535 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101240
+13:55:06.535 INFO [pool-2-thread-263]: com.aionemu.chatserver.network.netty.handler.AbstractChannelHandler [AbstractChannelHandler.java:55] - Channel disconnected IP: 127.0.0.1
+13:55:34.238 INFO [pool-5-thread-1]: com.aionemu.chatserver.service.GameServerService [GameServerService.java:68] - Gameserver #36 is disconnected
+13:57:59.925 INFO [Accept Dispatcher]: com.aionemu.chatserver.network.gameserver.GsConnection [GsConnection.java:107] - Gameserver connection attemp from: 127.0.0.1
+13:57:59.927 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_CS_AUTH [CM_CS_AUTH.java:70] - Gameserver #36 is now online.
+13:59:23.246 INFO [pool-2-thread-267]: com.aionemu.chatserver.network.netty.handler.ClientChannelHandler [ClientChannelHandler.java:61] - Channel connected Ip:127.0.0.1
+14:05:43.800 INFO [pool-2-thread-334]: com.aionemu.chatserver.network.netty.handler.AbstractChannelHandler [AbstractChannelHandler.java:55] - Channel disconnected IP: 127.0.0.1
+14:05:43.811 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101261
+14:06:06.198 INFO [pool-2-thread-337]: com.aionemu.chatserver.network.netty.handler.ClientChannelHandler [ClientChannelHandler.java:61] - Channel connected Ip:127.0.0.1
+14:08:33.712 INFO [pool-2-thread-363]: com.aionemu.chatserver.network.netty.handler.AbstractChannelHandler [AbstractChannelHandler.java:55] - Channel disconnected IP: 127.0.0.1
+14:08:33.721 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101261
+14:08:56.437 INFO [pool-2-thread-367]: com.aionemu.chatserver.network.netty.handler.ClientChannelHandler [ClientChannelHandler.java:61] - Channel connected Ip:127.0.0.1
+14:16:45.370 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101261
+14:16:45.370 INFO [pool-2-thread-422]: com.aionemu.chatserver.network.netty.handler.AbstractChannelHandler [AbstractChannelHandler.java:55] - Channel disconnected IP: 127.0.0.1
+14:16:54.405 INFO [pool-5-thread-1]: com.aionemu.chatserver.service.GameServerService [GameServerService.java:68] - Gameserver #36 is disconnected
+14:18:32.733 INFO [Accept Dispatcher]: com.aionemu.chatserver.network.gameserver.GsConnection [GsConnection.java:107] - Gameserver connection attemp from: 127.0.0.1
+14:18:32.734 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_CS_AUTH [CM_CS_AUTH.java:70] - Gameserver #36 is now online.
+14:19:54.048 INFO [pool-2-thread-425]: com.aionemu.chatserver.network.netty.handler.ClientChannelHandler [ClientChannelHandler.java:61] - Channel connected Ip:127.0.0.1
+14:20:22.388 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101275
+14:20:22.389 INFO [pool-2-thread-437]: com.aionemu.chatserver.network.netty.handler.AbstractChannelHandler [AbstractChannelHandler.java:55] - Channel disconnected IP: 127.0.0.1
+14:20:51.273 INFO [pool-5-thread-1]: com.aionemu.chatserver.service.GameServerService [GameServerService.java:68] - Gameserver #36 is disconnected
+14:21:46.452 INFO [Accept Dispatcher]: com.aionemu.chatserver.network.gameserver.GsConnection [GsConnection.java:107] - Gameserver connection attemp from: 127.0.0.1
+14:21:46.453 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_CS_AUTH [CM_CS_AUTH.java:70] - Gameserver #36 is now online.
+14:24:27.064 INFO [pool-2-thread-441]: com.aionemu.chatserver.network.netty.handler.ClientChannelHandler [ClientChannelHandler.java:61] - Channel connected Ip:127.0.0.1
+14:25:37.954 INFO [pool-2-thread-459]: com.aionemu.chatserver.network.netty.handler.AbstractChannelHandler [AbstractChannelHandler.java:55] - Channel disconnected IP: 127.0.0.1
+14:25:37.988 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101275
+14:26:16.560 INFO [pool-2-thread-462]: com.aionemu.chatserver.network.netty.handler.ClientChannelHandler [ClientChannelHandler.java:61] - Channel connected Ip:127.0.0.1
+14:26:50.816 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101275
+14:26:50.816 INFO [pool-2-thread-474]: com.aionemu.chatserver.network.netty.handler.AbstractChannelHandler [AbstractChannelHandler.java:55] - Channel disconnected IP: 127.0.0.1
+14:29:29.852 INFO [pool-5-thread-1]: com.aionemu.chatserver.service.GameServerService [GameServerService.java:68] - Gameserver #36 is disconnected
+14:30:48.753 INFO [Accept Dispatcher]: com.aionemu.chatserver.network.gameserver.GsConnection [GsConnection.java:107] - Gameserver connection attemp from: 127.0.0.1
+14:30:48.753 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_CS_AUTH [CM_CS_AUTH.java:70] - Gameserver #36 is now online.
+14:32:14.506 INFO [pool-2-thread-477]: com.aionemu.chatserver.network.netty.handler.ClientChannelHandler [ClientChannelHandler.java:61] - Channel connected Ip:127.0.0.1
+14:33:00.294 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101282
+14:33:00.294 INFO [pool-2-thread-492]: com.aionemu.chatserver.network.netty.handler.AbstractChannelHandler [AbstractChannelHandler.java:55] - Channel disconnected IP: 127.0.0.1
+14:33:53.648 INFO [pool-5-thread-1]: com.aionemu.chatserver.service.GameServerService [GameServerService.java:68] - Gameserver #36 is disconnected
+14:39:54.050 INFO [Accept Dispatcher]: com.aionemu.chatserver.network.gameserver.GsConnection [GsConnection.java:107] - Gameserver connection attemp from: 127.0.0.1
+14:39:54.050 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_CS_AUTH [CM_CS_AUTH.java:70] - Gameserver #36 is now online.
+14:43:35.530 INFO [pool-2-thread-496]: com.aionemu.chatserver.network.netty.handler.ClientChannelHandler [ClientChannelHandler.java:61] - Channel connected Ip:127.0.0.1
+14:44:20.863 INFO [pool-2-thread-515]: com.aionemu.chatserver.network.netty.handler.AbstractChannelHandler [AbstractChannelHandler.java:55] - Channel disconnected IP: 127.0.0.1
+14:44:20.875 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101289
+14:46:41.001 INFO [pool-2-thread-518]: com.aionemu.chatserver.network.netty.handler.ClientChannelHandler [ClientChannelHandler.java:61] - Channel connected Ip:127.0.0.1
+14:48:04.348 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101289
+14:48:04.348 INFO [pool-2-thread-535]: com.aionemu.chatserver.network.netty.handler.AbstractChannelHandler [AbstractChannelHandler.java:55] - Channel disconnected IP: 127.0.0.1
+14:48:16.603 INFO [pool-5-thread-1]: com.aionemu.chatserver.service.GameServerService [GameServerService.java:68] - Gameserver #36 is disconnected
+14:53:03.094 INFO [Accept Dispatcher]: com.aionemu.chatserver.network.gameserver.GsConnection [GsConnection.java:107] - Gameserver connection attemp from: 127.0.0.1
+14:53:03.094 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_CS_AUTH [CM_CS_AUTH.java:70] - Gameserver #36 is now online.
+14:57:39.741 INFO [pool-2-thread-539]: com.aionemu.chatserver.network.netty.handler.ClientChannelHandler [ClientChannelHandler.java:61] - Channel connected Ip:127.0.0.1
+15:00:46.793 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101296
+15:00:46.794 INFO [pool-2-thread-568]: com.aionemu.chatserver.network.netty.handler.AbstractChannelHandler [AbstractChannelHandler.java:55] - Channel disconnected IP: 127.0.0.1
+15:01:02.426 INFO [pool-5-thread-1]: com.aionemu.chatserver.service.GameServerService [GameServerService.java:68] - Gameserver #36 is disconnected
+15:02:02.522 INFO [Accept Dispatcher]: com.aionemu.chatserver.network.gameserver.GsConnection [GsConnection.java:107] - Gameserver connection attemp from: 127.0.0.1
+15:02:02.522 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_CS_AUTH [CM_CS_AUTH.java:70] - Gameserver #36 is now online.
+15:03:33.796 INFO [pool-2-thread-571]: com.aionemu.chatserver.network.netty.handler.ClientChannelHandler [ClientChannelHandler.java:61] - Channel connected Ip:127.0.0.1
+15:12:45.407 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101296
+15:12:45.407 INFO [pool-2-thread-654]: com.aionemu.chatserver.network.netty.handler.AbstractChannelHandler [AbstractChannelHandler.java:55] - Channel disconnected IP: 127.0.0.1
+15:13:50.561 INFO [pool-5-thread-1]: com.aionemu.chatserver.service.GameServerService [GameServerService.java:68] - Gameserver #36 is disconnected
+15:42:09.284 INFO [Accept Dispatcher]: com.aionemu.chatserver.network.gameserver.GsConnection [GsConnection.java:107] - Gameserver connection attemp from: 127.0.0.1
+15:42:09.284 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_CS_AUTH [CM_CS_AUTH.java:70] - Gameserver #36 is now online.
+15:47:50.978 INFO [pool-2-thread-658]: com.aionemu.chatserver.network.netty.handler.ClientChannelHandler [ClientChannelHandler.java:61] - Channel connected Ip:127.0.0.1
+15:50:14.871 INFO [pool-2-thread-682]: com.aionemu.chatserver.network.netty.handler.ClientChannelHandler [ClientChannelHandler.java:61] - Channel connected Ip:127.0.0.1
+15:52:05.654 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101225
+15:52:05.654 INFO [pool-2-thread-724]: com.aionemu.chatserver.network.netty.handler.AbstractChannelHandler [AbstractChannelHandler.java:55] - Channel disconnected IP: 127.0.0.1
+15:52:09.616 INFO [pool-5-thread-1]: com.aionemu.chatserver.network.gameserver.clientpackets.CM_PLAYER_LOGOUT [CM_PLAYER_LOGOUT.java:49] - Player logout 101263
+15:52:09.616 INFO [pool-2-thread-727]: com.aionemu.chatserver.network.netty.handler.AbstractChannelHandler [AbstractChannelHandler.java:55] - Channel disconnected IP: 127.0.0.1
+15:57:24.939 INFO [pool-5-thread-1]: com.aionemu.chatserver.service.GameServerService [GameServerService.java:68] - Gameserver #36 is disconnected

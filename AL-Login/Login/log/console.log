@@ -1,0 +1,175 @@
+12:53:59.429 INFO [main]: org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java:1175] - Using default implementation for ThreadExecutor
+12:53:59.444 INFO [main]: org.quartz.core.SchedulerSignalerImpl [SchedulerSignalerImpl.java:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+12:53:59.445 INFO [main]: org.quartz.core.QuartzScheduler [QuartzScheduler.java:243] - Quartz Scheduler v.2.1.7 created.
+12:53:59.446 INFO [main]: org.quartz.simpl.RAMJobStore [RAMJobStore.java:154] - RAMJobStore initialized.
+12:53:59.447 INFO [main]: org.quartz.core.QuartzScheduler [QuartzScheduler.java:268] - Scheduler meta-data: Quartz Scheduler (v2.1.7) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 1 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+12:53:59.448 INFO [main]: org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java:1324] - Quartz scheduler 'QuartzScheduler' initialized from an externally provided properties instance.
+12:53:59.448 INFO [main]: org.quartz.impl.StdSchedulerFactory [StdSchedulerFactory.java:1328] - Quartz scheduler version: 2.1.7
+12:53:59.448 INFO [main]: org.quartz.core.QuartzScheduler [QuartzScheduler.java:534] - Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+12:53:59.448 INFO [main]: com.aionemu.loginserver.LoginServer [LoginServer.java:117] - 2013-05-25 12-53-59
+12:53:59.449 INFO [main]: com.aionemu.loginserver.configs.Config [Config.java:140] - Loading: myls.properties
+12:53:59.450 INFO [main]: com.aionemu.loginserver.configs.Config [Config.java:144] - No override properties found
+12:53:59.463 INFO [main]: com.aionemu.loginserver.configs.Config [Config.java:151] - Loading: ./config/network/network.properties
+12:53:59.478 INFO [main]: com.aionemu.loginserver.configs.Config [Config.java:153] - Loading: ./config/network/commons.properties
+12:53:59.478 INFO [main]: com.aionemu.loginserver.configs.Config [Config.java:155] - Loading: ./config/network/database.properties
+12:53:59.739 INFO [main]: com.aionemu.commons.database.DatabaseFactory [DatabaseFactory.java:123] - Successfully connected to database
+12:54:00.389 INFO [main]: com.aionemu.commons.database.dao.DAOManager [DAOManager.java:85] - Loaded 8 DAO implementations.
+12:54:00.417 INFO [main]: com.aionemu.loginserver.utils.ThreadPoolManager [ThreadPoolManager.java:70] - ThreadPoolManager: Initialized with 23 scheduler, 11 instant, 0 long running thread(s).
+12:54:00.418 INFO [main]: com.aionemu.loginserver.network.ncrypt.KeyGen [KeyGen.java:60] - Initializing Key Generator...
+12:54:01.654 INFO [main]: com.aionemu.loginserver.GameServerTable [GameServerTable.java:67] - GameServerTable loaded 1 registered GameServers.
+12:54:01.705 INFO [main]: com.aionemu.loginserver.controller.BannedIpController [BannedIpController.java:69] - BannedIpController loaded 0 IP bans.
+12:54:01.720 INFO [main]: com.aionemu.commons.network.NioServer [NioServer.java:117] - Server listening on all available IPs on Port 9014 for Gs Connections
+12:54:01.721 INFO [main]: com.aionemu.commons.network.NioServer [NioServer.java:117] - Server listening on all available IPs on Port 2106 for Aion Connections
+12:54:01.734 INFO [main]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:49] - PlayerTransferService will be initialized in 10 sec.
+12:54:01.754 INFO [main]: com.aionemu.loginserver.taskmanager.TaskFromDBManager [TaskFromDBManager.java:37] - Loaded 0 task from the database
+12:54:01.755 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:117] - OS: Windows 8 Build: 6.2
+12:54:01.755 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:117] - OS Arch: amd64
+12:54:01.755 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:117] - ..................................................
+12:54:01.755 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:117] - ..................................................
+12:54:01.757 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:112] - Available CPU(s): 8
+12:54:01.757 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:112] - Processor(s) Identifier: Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+12:54:01.757 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:112] - ..................................................
+12:54:01.757 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:112] - ..................................................
+12:54:01.758 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:122] - Java Platform Information
+12:54:01.758 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:122] - Java Runtime  Name: Java(TM) SE Runtime Environment
+12:54:01.758 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:122] - Java Version: 1.7.0_21
+12:54:01.758 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:122] - Java Class Version: 51.0
+12:54:01.758 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:122] - ..................................................
+12:54:01.758 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:122] - ..................................................
+12:54:01.759 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:127] - Virtual Machine Information (JVM)
+12:54:01.759 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:127] - JVM Name: Java HotSpot(TM) 64-Bit Server VM
+12:54:01.762 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:127] - JVM installation directory: C:\Program Files\Java\jre7
+12:54:01.762 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:127] - JVM version: 23.21-b01
+12:54:01.762 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:127] - JVM Vendor: Oracle Corporation
+12:54:01.763 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:127] - JVM Info: mixed mode
+12:54:01.763 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:127] - ..................................................
+12:54:01.763 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:127] - ..................................................
+12:54:01.764 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:107] - +----
+12:54:01.764 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:107] - | Global Memory Informations at 12:54:01:
+12:54:01.766 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:107] - |    |
+12:54:01.766 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:107] - | Allowed Memory: 58304 KB
+12:54:01.766 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:107] - |    |= Allocated Memory: 58304 KB (100,0000%)
+12:54:01.766 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:107] - |    |= Non-Allocated Memory: 0 KB (0,0000%)
+12:54:01.766 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:107] - | Allocated Memory: 58304 KB
+12:54:01.766 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:107] - |    |= Used Memory: 23293 KB (39,9509%)
+12:54:01.766 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:107] - |    |= Unused (cached) Memory: 35011 KB (60,0491%)
+12:54:01.766 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:107] - | Useable Memory: 35011 KB (60,0491%)
+12:54:01.770 INFO [main]: com.aionemu.commons.utils.AEInfos [AEInfos.java:107] - +----
+12:54:01.771 INFO [main]: PREMIUM_CTRL [PremiumController.java:31] - PremiumController is ready for requests.
+12:54:01.771 INFO [main]: com.aionemu.loginserver.LoginServer [LoginServer.java:151] - AL Login Server started in 2 seconds.
+12:54:11.754 INFO [pool-3-thread-2]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+12:55:28.757 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:267] - Gameserver connection attemp from: 127.0.0.1
+12:55:28.767 INFO [pool-4-thread-1]: com.aionemu.loginserver.network.gameserver.clientpackets.CM_GS_AUTH [CM_GS_AUTH.java:103] - Gameserver #36 is now online.
+12:55:33.768 INFO [pool-3-thread-6]: com.aionemu.loginserver.PingPongThread [PingPongThread.java:35] - PingPong for gameserver #36 has started.
+12:58:01.307 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.aion.LoginConnection [LoginConnection.java:397] - Connection attemp from: 127.0.0.1
+13:01:11.736 INFO [pool-3-thread-9]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+13:08:11.737 INFO [pool-3-thread-11]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+13:15:11.736 INFO [pool-3-thread-3]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+13:15:40.437 INFO [pool-6-thread-1]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:142] - GameServer [ID:36] 127.0.0.1 disconnected
+13:15:42.978 WARN [pool-3-thread-6]: com.aionemu.commons.utils.concurrent.ExecuteWrapper [ExecuteWrapper.java:67] - class com.aionemu.loginserver.PingPongThread - execution time: 1209172msec
+13:18:40.064 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:267] - Gameserver connection attemp from: 127.0.0.1
+13:18:40.071 INFO [pool-4-thread-3]: com.aionemu.loginserver.network.gameserver.clientpackets.CM_GS_AUTH [CM_GS_AUTH.java:103] - Gameserver #36 is now online.
+13:18:45.072 INFO [pool-3-thread-7]: com.aionemu.loginserver.PingPongThread [PingPongThread.java:35] - PingPong for gameserver #36 has started.
+13:20:06.689 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.aion.LoginConnection [LoginConnection.java:397] - Connection attemp from: 127.0.0.1
+13:21:25.941 INFO [pool-6-thread-1]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:142] - GameServer [ID:36] 127.0.0.1 disconnected
+13:21:27.093 WARN [pool-3-thread-7]: com.aionemu.commons.utils.concurrent.ExecuteWrapper [ExecuteWrapper.java:67] - class com.aionemu.loginserver.PingPongThread - execution time: 162020msec
+13:22:11.735 INFO [pool-3-thread-23]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+13:26:00.321 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:267] - Gameserver connection attemp from: 127.0.0.1
+13:26:00.327 INFO [pool-4-thread-10]: com.aionemu.loginserver.network.gameserver.clientpackets.CM_GS_AUTH [CM_GS_AUTH.java:103] - Gameserver #36 is now online.
+13:26:05.329 INFO [pool-3-thread-14]: com.aionemu.loginserver.PingPongThread [PingPongThread.java:35] - PingPong for gameserver #36 has started.
+13:27:37.078 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.aion.LoginConnection [LoginConnection.java:397] - Connection attemp from: 127.0.0.1
+13:29:03.268 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.aion.LoginConnection [LoginConnection.java:397] - Connection attemp from: 127.0.0.1
+13:29:03.306 INFO [PacketProcessor:0]: com.aionemu.loginserver.network.aion.LoginConnection [LoginConnection.java:274] - sending packet: [S] 0x01 SM_LOGIN_FAIL and closing connection after that.
+13:29:11.735 INFO [pool-3-thread-17]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+13:29:13.739 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.aion.LoginConnection [LoginConnection.java:397] - Connection attemp from: 127.0.0.1
+13:29:31.845 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.aion.LoginConnection [LoginConnection.java:397] - Connection attemp from: 127.0.0.1
+13:30:41.077 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.aion.LoginConnection [LoginConnection.java:397] - Connection attemp from: 127.0.0.1
+13:30:41.136 INFO [PacketProcessor:0]: com.aionemu.loginserver.network.aion.LoginConnection [LoginConnection.java:274] - sending packet: [S] 0x01 SM_LOGIN_FAIL and closing connection after that.
+13:30:48.857 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.aion.LoginConnection [LoginConnection.java:397] - Connection attemp from: 127.0.0.1
+13:34:14.178 INFO [pool-6-thread-1]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:142] - GameServer [ID:36] 127.0.0.1 disconnected
+13:34:14.362 WARN [pool-3-thread-14]: com.aionemu.commons.utils.concurrent.ExecuteWrapper [ExecuteWrapper.java:67] - class com.aionemu.loginserver.PingPongThread - execution time: 489032msec
+13:36:11.736 INFO [pool-3-thread-16]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+13:43:03.897 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:267] - Gameserver connection attemp from: 127.0.0.1
+13:43:03.905 INFO [pool-4-thread-2]: com.aionemu.loginserver.network.gameserver.clientpackets.CM_GS_AUTH [CM_GS_AUTH.java:103] - Gameserver #36 is now online.
+13:43:08.906 INFO [pool-3-thread-23]: com.aionemu.loginserver.PingPongThread [PingPongThread.java:35] - PingPong for gameserver #36 has started.
+13:43:11.736 INFO [pool-3-thread-6]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+13:50:11.736 INFO [pool-3-thread-9]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+13:50:23.300 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.aion.LoginConnection [LoginConnection.java:397] - Connection attemp from: 127.0.0.1
+13:55:34.238 INFO [pool-6-thread-1]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:142] - GameServer [ID:36] 127.0.0.1 disconnected
+13:55:36.020 WARN [pool-3-thread-23]: com.aionemu.commons.utils.concurrent.ExecuteWrapper [ExecuteWrapper.java:67] - class com.aionemu.loginserver.PingPongThread - execution time: 747114msec
+13:57:11.736 INFO [pool-3-thread-14]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+13:57:59.918 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:267] - Gameserver connection attemp from: 127.0.0.1
+13:57:59.924 INFO [pool-4-thread-6]: com.aionemu.loginserver.network.gameserver.clientpackets.CM_GS_AUTH [CM_GS_AUTH.java:103] - Gameserver #36 is now online.
+13:58:04.926 INFO [pool-3-thread-16]: com.aionemu.loginserver.PingPongThread [PingPongThread.java:35] - PingPong for gameserver #36 has started.
+13:59:05.825 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.aion.LoginConnection [LoginConnection.java:397] - Connection attemp from: 127.0.0.1
+14:04:12.791 INFO [pool-3-thread-5]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+14:11:11.760 INFO [pool-3-thread-6]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+14:16:54.405 INFO [pool-6-thread-1]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:142] - GameServer [ID:36] 127.0.0.1 disconnected
+14:16:56.113 WARN [pool-3-thread-16]: com.aionemu.commons.utils.concurrent.ExecuteWrapper [ExecuteWrapper.java:67] - class com.aionemu.loginserver.PingPongThread - execution time: 1131186msec
+14:18:11.736 INFO [pool-3-thread-18]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+14:18:32.700 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:267] - Gameserver connection attemp from: 127.0.0.1
+14:18:32.708 INFO [pool-4-thread-2]: com.aionemu.loginserver.network.gameserver.clientpackets.CM_GS_AUTH [CM_GS_AUTH.java:103] - Gameserver #36 is now online.
+14:18:37.709 INFO [pool-3-thread-14]: com.aionemu.loginserver.PingPongThread [PingPongThread.java:35] - PingPong for gameserver #36 has started.
+14:19:33.091 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.aion.LoginConnection [LoginConnection.java:397] - Connection attemp from: 127.0.0.1
+14:20:51.272 INFO [pool-6-thread-1]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:142] - GameServer [ID:36] 127.0.0.1 disconnected
+14:20:52.732 WARN [pool-3-thread-14]: com.aionemu.commons.utils.concurrent.ExecuteWrapper [ExecuteWrapper.java:67] - class com.aionemu.loginserver.PingPongThread - execution time: 135022msec
+14:21:46.430 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:267] - Gameserver connection attemp from: 127.0.0.1
+14:21:46.437 INFO [pool-4-thread-10]: com.aionemu.loginserver.network.gameserver.clientpackets.CM_GS_AUTH [CM_GS_AUTH.java:103] - Gameserver #36 is now online.
+14:21:51.438 INFO [pool-3-thread-3]: com.aionemu.loginserver.PingPongThread [PingPongThread.java:35] - PingPong for gameserver #36 has started.
+14:24:19.415 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.aion.LoginConnection [LoginConnection.java:397] - Connection attemp from: 127.0.0.1
+14:25:11.736 INFO [pool-3-thread-1]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+14:29:29.851 INFO [pool-6-thread-1]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:142] - GameServer [ID:36] 127.0.0.1 disconnected
+14:29:30.502 WARN [pool-3-thread-3]: com.aionemu.commons.utils.concurrent.ExecuteWrapper [ExecuteWrapper.java:67] - class com.aionemu.loginserver.PingPongThread - execution time: 459064msec
+14:30:48.729 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:267] - Gameserver connection attemp from: 127.0.0.1
+14:30:48.735 INFO [pool-4-thread-6]: com.aionemu.loginserver.network.gameserver.clientpackets.CM_GS_AUTH [CM_GS_AUTH.java:103] - Gameserver #36 is now online.
+14:30:53.737 INFO [pool-3-thread-17]: com.aionemu.loginserver.PingPongThread [PingPongThread.java:35] - PingPong for gameserver #36 has started.
+14:31:54.252 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.aion.LoginConnection [LoginConnection.java:397] - Connection attemp from: 127.0.0.1
+14:32:11.736 INFO [pool-3-thread-11]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+14:33:53.648 INFO [pool-6-thread-1]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:142] - GameServer [ID:36] 127.0.0.1 disconnected
+14:33:53.768 WARN [pool-3-thread-17]: com.aionemu.commons.utils.concurrent.ExecuteWrapper [ExecuteWrapper.java:67] - class com.aionemu.loginserver.PingPongThread - execution time: 180030msec
+14:39:11.735 INFO [pool-3-thread-21]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+14:39:54.020 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:267] - Gameserver connection attemp from: 127.0.0.1
+14:39:54.026 INFO [pool-4-thread-6]: com.aionemu.loginserver.network.gameserver.clientpackets.CM_GS_AUTH [CM_GS_AUTH.java:103] - Gameserver #36 is now online.
+14:39:59.027 INFO [pool-3-thread-19]: com.aionemu.loginserver.PingPongThread [PingPongThread.java:35] - PingPong for gameserver #36 has started.
+14:43:14.659 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.aion.LoginConnection [LoginConnection.java:397] - Connection attemp from: 127.0.0.1
+14:46:11.735 INFO [pool-3-thread-10]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+14:48:16.603 INFO [pool-6-thread-1]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:142] - GameServer [ID:36] 127.0.0.1 disconnected
+14:48:17.105 WARN [pool-3-thread-19]: com.aionemu.commons.utils.concurrent.ExecuteWrapper [ExecuteWrapper.java:67] - class com.aionemu.loginserver.PingPongThread - execution time: 498077msec
+14:53:03.074 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:267] - Gameserver connection attemp from: 127.0.0.1
+14:53:03.081 INFO [pool-4-thread-9]: com.aionemu.loginserver.network.gameserver.clientpackets.CM_GS_AUTH [CM_GS_AUTH.java:103] - Gameserver #36 is now online.
+14:53:08.082 INFO [pool-3-thread-4]: com.aionemu.loginserver.PingPongThread [PingPongThread.java:35] - PingPong for gameserver #36 has started.
+14:53:11.735 INFO [pool-3-thread-17]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+14:57:13.096 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.aion.LoginConnection [LoginConnection.java:397] - Connection attemp from: 127.0.0.1
+15:00:11.736 INFO [pool-3-thread-9]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+15:01:02.426 INFO [pool-6-thread-1]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:142] - GameServer [ID:36] 127.0.0.1 disconnected
+15:01:05.167 WARN [pool-3-thread-4]: com.aionemu.commons.utils.concurrent.ExecuteWrapper [ExecuteWrapper.java:67] - class com.aionemu.loginserver.PingPongThread - execution time: 477084msec
+15:02:02.502 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:267] - Gameserver connection attemp from: 127.0.0.1
+15:02:02.509 INFO [pool-4-thread-9]: com.aionemu.loginserver.network.gameserver.clientpackets.CM_GS_AUTH [CM_GS_AUTH.java:103] - Gameserver #36 is now online.
+15:02:07.512 INFO [pool-3-thread-10]: com.aionemu.loginserver.PingPongThread [PingPongThread.java:35] - PingPong for gameserver #36 has started.
+15:03:19.301 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.aion.LoginConnection [LoginConnection.java:397] - Connection attemp from: 127.0.0.1
+15:07:11.735 INFO [pool-3-thread-6]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+15:13:50.561 INFO [pool-6-thread-1]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:142] - GameServer [ID:36] 127.0.0.1 disconnected
+15:13:52.624 WARN [pool-3-thread-10]: com.aionemu.commons.utils.concurrent.ExecuteWrapper [ExecuteWrapper.java:67] - class com.aionemu.loginserver.PingPongThread - execution time: 705111msec
+15:14:11.736 INFO [pool-3-thread-17]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+15:21:11.735 INFO [pool-3-thread-16]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+15:28:11.736 INFO [pool-3-thread-15]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+15:35:11.736 INFO [pool-3-thread-6]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+15:42:09.258 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:267] - Gameserver connection attemp from: 127.0.0.1
+15:42:09.264 INFO [pool-4-thread-10]: com.aionemu.loginserver.network.gameserver.clientpackets.CM_GS_AUTH [CM_GS_AUTH.java:103] - Gameserver #36 is now online.
+15:42:11.735 INFO [pool-3-thread-14]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+15:42:14.266 INFO [pool-3-thread-5]: com.aionemu.loginserver.PingPongThread [PingPongThread.java:35] - PingPong for gameserver #36 has started.
+15:47:37.300 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.aion.LoginConnection [LoginConnection.java:397] - Connection attemp from: 127.0.0.1
+15:48:37.586 INFO [AcceptReadWrite Dispatcher]: com.aionemu.loginserver.network.aion.LoginConnection [LoginConnection.java:397] - Connection attemp from: 127.0.0.1
+15:49:11.737 INFO [pool-3-thread-16]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+15:56:11.736 INFO [pool-3-thread-21]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+15:57:24.939 INFO [pool-6-thread-1]: com.aionemu.loginserver.network.gameserver.GsConnection [GsConnection.java:142] - GameServer [ID:36] 127.0.0.1 disconnected
+15:57:26.379 WARN [pool-3-thread-5]: com.aionemu.commons.utils.concurrent.ExecuteWrapper [ExecuteWrapper.java:67] - class com.aionemu.loginserver.PingPongThread - execution time: 912113msec
+16:03:11.736 INFO [pool-3-thread-7]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
+16:10:12.471 INFO [pool-3-thread-17]: com.aionemu.loginserver.service.PlayerTransferService [PlayerTransferService.java:57] - PlayerTransfer perform task init. 0 new tasks.
