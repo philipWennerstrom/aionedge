@@ -38,6 +38,7 @@ import com.aionemu.gameserver.model.team2.group.PlayerGroup;
 import com.aionemu.gameserver.questEngine.QuestEngine;
 import com.aionemu.gameserver.questEngine.model.QuestEnv;
 import com.aionemu.gameserver.utils.MathUtil;
+import com.aionemu.gameserver.world.MapRegion;
 import com.aionemu.gameserver.world.geo.GeoService;
 
 /**
@@ -65,9 +66,11 @@ public class AggroList {
 		if (!isAware(attacker))
 			return;
 		
+		//TODO Meu Codigo tentando resolver bug da AI ao receber dot
 		AI2 ai2 = owner.getAi2();
 		if(owner.getTarget()==null) {
-			 if(!GeoService.getInstance().canSee(owner, attacker) && !MathUtil.isInRange(owner, attacker, 15)) {
+			MapRegion map = attacker.getActiveRegion();
+			 if(map!=null && !GeoService.getInstance().canSee(owner, attacker) && !MathUtil.isInRange(owner, attacker, 15)) {
 				 return;
 			}
 		}

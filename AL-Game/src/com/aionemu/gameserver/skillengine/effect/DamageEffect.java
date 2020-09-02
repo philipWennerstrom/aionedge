@@ -22,10 +22,15 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlType;
 
 import com.aionemu.gameserver.controllers.attack.AttackUtil;
+import com.aionemu.gameserver.model.gameobjects.Creature;
+import com.aionemu.gameserver.model.gameobjects.player.Player;
 import com.aionemu.gameserver.skillengine.action.DamageType;
 import com.aionemu.gameserver.skillengine.change.Func;
 import com.aionemu.gameserver.skillengine.effect.modifier.ActionModifier;
 import com.aionemu.gameserver.skillengine.model.Effect;
+import com.aionemu.gameserver.utils.MathUtil;
+import com.aionemu.gameserver.world.MapRegion;
+import com.aionemu.gameserver.world.geo.GeoService;
 
 /**
  * @author ATracer
@@ -41,6 +46,15 @@ public abstract class DamageEffect extends EffectTemplate {
 	
 	@Override
 	public void applyEffect(Effect effect) {
+		Creature effected = effect.getEffected();
+		Creature effector = effect.getEffector();
+	 //TODO Impede o bug de geodata quando o NPCperde o target  e o effector nao pode ser visto quando o efeito da skill continua
+		if(effected!=null && !(effected instanceof Player)) {
+			 MapRegion map = effector.getActiveRegion();
+			 if(!GeoService.getInstance().canSee(effected, effector) && !MathUtil.isInRange(effected, effector, 15)) {
+				 return;
+			}
+		}
 	  effect.getEffected().getController() .onAttack(effect.getEffector(), effect.getSkillId(), effect.getReserved1(), true);
 	  effect.getEffector().getObserveController().notifyAttackObservers(effect.getEffected());
 	}

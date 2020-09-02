@@ -27,6 +27,9 @@ import com.aionemu.gameserver.ai2.manager.WalkManager;
 import com.aionemu.gameserver.ai2.poll.AIQuestion;
 import com.aionemu.gameserver.model.gameobjects.Creature;
 import com.aionemu.gameserver.model.gameobjects.Npc;
+import com.aionemu.gameserver.model.gameobjects.player.Player;
+import com.aionemu.gameserver.utils.MathUtil;
+import com.aionemu.gameserver.world.geo.GeoService;
 
 /**
  * @author ATracer
@@ -64,7 +67,9 @@ public class AttackEventHandler {
 				AI2Logger.info(npcAI, "onAttack() -> startAttacking");
 			}
 			npcAI.setSubStateIfNot(AISubState.NONE);
+		
 			npcAI.getOwner().setTarget(creature);
+			
 			AttackManager.startAttacking(npcAI);
 			if (npcAI.poll(AIQuestion.CAN_SHOUT))
 				ShoutEventHandler.onAttackBegin(npcAI, (Creature) npcAI.getOwner().getTarget());

@@ -22,9 +22,13 @@ import javax.xml.bind.annotation.XmlType;
 
 import com.aionemu.gameserver.controllers.attack.AttackUtil;
 import com.aionemu.gameserver.model.gameobjects.Creature;
+import com.aionemu.gameserver.model.gameobjects.player.Player;
 import com.aionemu.gameserver.network.aion.serverpackets.SM_ATTACK_STATUS.LOG;
 import com.aionemu.gameserver.network.aion.serverpackets.SM_ATTACK_STATUS.TYPE;
 import com.aionemu.gameserver.skillengine.model.Effect;
+import com.aionemu.gameserver.utils.MathUtil;
+import com.aionemu.gameserver.world.MapRegion;
+import com.aionemu.gameserver.world.geo.GeoService;
 
 /**
  * @author kecimis
@@ -47,6 +51,16 @@ public class SpellAttackEffect extends AbstractOverTimeEffect {
 	public void onPeriodicAction(Effect effect) {
 		Creature effected = effect.getEffected();
 		Creature effector = effect.getEffector();
+		
+		//TODO Impede o bug de geodata quando o NPCperde o target  e o effector nao pode ser visto quando o efeito da skill continua
+		if(!(effected instanceof Player)) {
+			 MapRegion map = effector.getActiveRegion();
+			 if(map!=null && !GeoService.getInstance().canSee(effected, effector) && !MathUtil.isInRange(effected, effector, 15)) {
+				 return;
+			}
+		
+		}
+		
 		effected.getController().onAttack(effector, effect.getSkillId(), TYPE.DAMAGE, effect.getReservedInt(position), false, LOG.SPELLATK);
 		effected.getObserveController().notifyDotAttackedObservers(effector, effect);
 	}

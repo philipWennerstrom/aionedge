@@ -53,8 +53,10 @@ import com.aionemu.gameserver.spawnengine.WalkerGroupShift;
 import com.aionemu.gameserver.utils.MathUtil;
 import com.aionemu.gameserver.utils.PacketSendUtility;
 import com.aionemu.gameserver.utils.ThreadPoolManager;
+import com.aionemu.gameserver.world.MapRegion;
 import com.aionemu.gameserver.world.WorldPosition;
 import com.aionemu.gameserver.world.WorldType;
+import com.aionemu.gameserver.world.geo.GeoService;
 import com.google.common.base.Preconditions;
 
 /**
@@ -337,6 +339,13 @@ public class Npc extends Creature {
 	@Override
 	public void setTarget(VisibleObject creature) {
 		if (getTarget() != creature) {
+			//TODO Impede o bug de geodata quando o NPCperde o target  e o effector nao pode ser visto quando o efeito da skill continua
+			if(creature!=null && !(creature instanceof Player)) {
+				 MapRegion map = this.getActiveRegion();
+				 if( map!=null&& !GeoService.getInstance().canSee(this, creature) && !MathUtil.isInRange(this, creature, 15)) {
+					 return;
+				}
+			}
 			super.setTarget(creature);
 			super.clearAttackedCount();
 			getGameStats().renewLastChangeTargetTime();

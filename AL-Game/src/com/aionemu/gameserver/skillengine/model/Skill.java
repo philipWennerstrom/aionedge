@@ -54,6 +54,7 @@ import com.aionemu.gameserver.utils.MathUtil;
 import com.aionemu.gameserver.utils.PacketSendUtility;
 import com.aionemu.gameserver.utils.ThreadPoolManager;
 import com.aionemu.gameserver.utils.audit.AuditLogger;
+import com.aionemu.gameserver.world.MapRegion;
 import com.aionemu.gameserver.world.geo.GeoService;
 
 /**
@@ -694,8 +695,20 @@ public class Skill {
 				}
 			}, hitTime);
 		}
-		if (skillMethod == SkillMethod.CAST || skillMethod == SkillMethod.ITEM)
+		if (skillMethod == SkillMethod.CAST || skillMethod == SkillMethod.ITEM) {
+		//TODO Impede o bug de geodata quando o NPCperde o target  e o effector nao pode ser visto quando o efeito da skill continua
+			for (Effect e : effects) {
+				Creature effected = e.getEffected();
+				if (!(effected instanceof Player)) {
+					MapRegion map = effector.getActiveRegion();
+					if (map!=null && !GeoService.getInstance().canSee(effected, effector) && !MathUtil.isInRange(effected, effector, 15)) {
+						return;
+					}
+
+				}
+			}
 			sendCastspellEnd(spellStatus, dashStatus, effects);
+		}
 		
 		if (effector instanceof Npc)
 		 SkillAttackManager.afterUseSkill((NpcAI2) ((Npc) effector).getAi2());

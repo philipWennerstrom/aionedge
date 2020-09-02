@@ -45,8 +45,11 @@ import com.aionemu.gameserver.skillengine.condition.Conditions;
 import com.aionemu.gameserver.skillengine.effect.*;
 import com.aionemu.gameserver.skillengine.periodicaction.PeriodicAction;
 import com.aionemu.gameserver.skillengine.periodicaction.PeriodicActions;
+import com.aionemu.gameserver.utils.MathUtil;
 import com.aionemu.gameserver.utils.PacketSendUtility;
 import com.aionemu.gameserver.utils.ThreadPoolManager;
+import com.aionemu.gameserver.world.MapRegion;
+import com.aionemu.gameserver.world.geo.GeoService;
 
 /**
  * @author ATracer
@@ -695,8 +698,17 @@ public class Effect implements StatOwner {
 		 */
 		//TODO hostile_type?
 		if (effectHate != 0) {
-			if (getEffected() instanceof Npc && !isDelayedDamage() && !isPetOrder() && !isSummoning())
+			if (getEffected() instanceof Npc && !isDelayedDamage() && !isPetOrder() && !isSummoning()) {
+			// TODO Impede o bug de geodata quando o NPCperde o target  e o effector nao pode ser visto quando o efeito da skill continua
+				if(!(getEffected() instanceof Player)) {
+					 MapRegion map = effector.getActiveRegion();
+					 if(map!=null&&!GeoService.getInstance().canSee(effected, effector) && !MathUtil.isInRange(effected, effector, 15)) {
+						 return;
+					}
+				
+				}
 				getEffected().getAggroList().addHate(effector, 1);
+			}
 			
 			effector.getController().broadcastHate(effectHate);
 		}
