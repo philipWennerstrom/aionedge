@@ -722,6 +722,14 @@ public class Effect implements StatOwner {
 					continue;
 				}
 			}
+			//TODO Impede o bug de geodata quando o NPCperde o target  e o effector nao pode ser visto quando o efeito da skill continua
+			if(!(effected instanceof Player)) {
+				 MapRegion map = effector.getActiveRegion();
+				 if(map!=null && !GeoService.getInstance().canSee(effected, effector) && !MathUtil.isInRange(effected, effector, 15)) {
+					 return;
+				}
+			
+			}
 			template.applyEffect(this);
 			template.startSubEffect(this);
 		}

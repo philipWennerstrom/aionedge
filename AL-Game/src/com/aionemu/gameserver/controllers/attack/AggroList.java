@@ -83,7 +83,15 @@ public class AggroList {
 		 */
 		ai.addHate(damage);
 	
-		// TODO move out to controller
+
+	//TODO Impede o bug de geodata quando o NPCperde o target  e o effector nao pode ser visto quando o efeito da skill continua
+		if(owner!=null && !(owner instanceof Player)) {
+				 MapRegion map = attacker.getActiveRegion();
+				 if(map!=null&& !GeoService.getInstance().canSee(owner, attacker) && !MathUtil.isInRange(owner, attacker, 15)) {
+					 return;
+				}
+			}
+			// TODO move out to controller
 		ai2.onCreatureEvent(AIEventType.ATTACK, attacker);
 	}
 
@@ -113,6 +121,13 @@ public class AggroList {
 				QuestEngine.getInstance().onAddAggroList(new QuestEnv(owner, player, 0, 0));
 			  }
 		  }
+		}
+	// TODO Impede o bug de geodata quando o NPCperde o target  e o effector nao pode ser visto quando o efeito da skill continua
+		if(!(owner instanceof Player)) {
+			 MapRegion map = creature.getActiveRegion();
+			 if(map!=null&&!GeoService.getInstance().canSee(owner, creature) && !MathUtil.isInRange(owner, creature, 15)) {
+				 return;
+			}
 		}
 		owner.getAi2().onCreatureEvent(AIEventType.ATTACK, creature);
 	}

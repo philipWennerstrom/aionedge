@@ -51,7 +51,7 @@ public abstract class DamageEffect extends EffectTemplate {
 	 //TODO Impede o bug de geodata quando o NPCperde o target  e o effector nao pode ser visto quando o efeito da skill continua
 		if(effected!=null && !(effected instanceof Player)) {
 			 MapRegion map = effector.getActiveRegion();
-			 if(!GeoService.getInstance().canSee(effected, effector) && !MathUtil.isInRange(effected, effector, 15)) {
+			 if(map!=null && !GeoService.getInstance().canSee(effected, effector) && !MathUtil.isInRange(effected, effector, 15)) {
 				 return;
 			}
 		}

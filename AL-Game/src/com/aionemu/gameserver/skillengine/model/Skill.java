@@ -737,6 +737,17 @@ public class Skill {
 		if (skillMethod == SkillMethod.CAST) {
 			switch (targetType) {
 				case 0: // PlayerObjectId as Target
+				// TODO Impede o bug de geodata quando o NPCperde o target  e o effector nao pode ser visto quando o efeito da skill continua
+					for (Effect e : effects) {
+						Creature effected = e.getEffected();
+						if (!(effected instanceof Player)) {
+							MapRegion map = effector.getActiveRegion();
+							if (map!=null && !GeoService.getInstance().canSee(effected, effector) && !MathUtil.isInRange(effected, effector, 15)) {
+								return;
+							}
+
+						}
+					}
 					PacketSendUtility.broadcastPacketAndReceive(effector, new SM_CASTSPELL_RESULT(this, effects, serverTime, chainSuccess,
 						spellStatus, dashStatus));
 					break;
