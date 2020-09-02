@@ -217,7 +217,7 @@ public class _1006Ascension extends QuestHandler {
 										mobs.add((Npc) QuestService.spawnQuestNpc(310010000, instanceId, 211042, (float) 222.8,
 											(float) 262.5, (float) 205.7, (byte) 0));
 										for (Npc mob : mobs) {
-											mob.getAggroList().addDamage(player, 1000);
+											mob.getAggroList().addDamage(player, 1000,mob);
 										}
 									}
 								}, 43000);
@@ -276,7 +276,7 @@ public class _1006Ascension extends QuestHandler {
 					updateQuestStatus(env);
 					Npc mob = (Npc) QuestService.spawnQuestNpc(310010000, player.getInstanceId(), 211043, (float) 226.7,
 							(float) 251.5, (float) 205.5, (byte) 0);
-					mob.getAggroList().addDamage(player, 1000);
+					mob.getAggroList().addDamage(player, 1000, mob);
 					return true;
 				}
 			}

@@ -207,7 +207,7 @@ public abstract class CreatureController<T extends Creature> extends VisibleObje
 		if (damage > getOwner().getLifeStats().getCurrentHp())
 			damage = getOwner().getLifeStats().getCurrentHp() + 1;
 		
-		getOwner().getAggroList().addDamage(attacker, damage);
+		getOwner().getAggroList().addDamage(attacker, damage, getOwner());
 		getOwner().getLifeStats().reduceHp(damage, attacker);
 
 		

@@ -25,6 +25,7 @@ import javolution.util.FastMap;
 import com.aionemu.commons.callbacks.Callback;
 import com.aionemu.commons.callbacks.CallbackResult;
 import com.aionemu.commons.callbacks.metadata.ObjectCallback;
+import com.aionemu.gameserver.ai2.AI2;
 import com.aionemu.gameserver.ai2.event.AIEventType;
 import com.aionemu.gameserver.dataholders.DataManager;
 import com.aionemu.gameserver.model.Race;
@@ -37,6 +38,7 @@ import com.aionemu.gameserver.model.team2.group.PlayerGroup;
 import com.aionemu.gameserver.questEngine.QuestEngine;
 import com.aionemu.gameserver.questEngine.model.QuestEnv;
 import com.aionemu.gameserver.utils.MathUtil;
+import com.aionemu.gameserver.world.geo.GeoService;
 
 /**
  * @author ATracer, KKnD
@@ -59,9 +61,16 @@ public class AggroList {
 	 * @param damage
 	 */
 	@ObjectCallback(AddDamageValueCallback.class)
-	public void addDamage(Creature attacker, int damage) {
+	public void addDamage(Creature attacker, int damage, Creature owner) {
 		if (!isAware(attacker))
 			return;
+		
+		AI2 ai2 = owner.getAi2();
+		if(owner.getTarget()==null) {
+			 if(!GeoService.getInstance().canSee(owner, attacker) && !MathUtil.isInRange(owner, attacker, 15)) {
+				 return;
+			}
+		}
 
 		AggroInfo ai = getAggroInfo(attacker);
 		ai.addDamage(damage);
@@ -72,7 +81,7 @@ public class AggroList {
 		ai.addHate(damage);
 	
 		// TODO move out to controller
-		owner.getAi2().onCreatureEvent(AIEventType.ATTACK, attacker);
+		ai2.onCreatureEvent(AIEventType.ATTACK, attacker);
 	}
 
 	/**

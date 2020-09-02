@@ -147,7 +147,7 @@ public class _1114TheNymphsGown extends QuestHandler {
 								continue;
 							if (((Npc) obj).getNpcId() != 203175) // Seirenia
 								continue;
-							((Npc) obj).getAggroList().addDamage(player, 50);
+							((Npc) obj).getAggroList().addDamage(player, 50, ((Npc) obj));
 						}
 						// Nymph's Dress
 						if (!giveQuestItem(env, 182200217, 1))

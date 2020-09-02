@@ -97,7 +97,7 @@ public class MoveTaskManager extends AbstractPeriodicTaskManager {
 		protected void removeAndExecuteFirst() {
 			final Creature creature = removeFirst();
 			try {
-				creature.getAi2().onGeneralEvent(AIEventType.MOVE_VALIDATE);
+			creature.getAi2().onGeneralEvent(AIEventType.MOVE_VALIDATE);
 			}
 			catch (RuntimeException e) {
 				log.warn("", e);
