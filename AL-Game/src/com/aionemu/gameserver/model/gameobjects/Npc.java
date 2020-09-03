@@ -21,8 +21,11 @@ import java.util.List;
 
 import org.apache.commons.lang.StringUtils;
 
+import com.aionemu.gameserver.ai2.AI2;
 import com.aionemu.gameserver.ai2.AI2Engine;
+import com.aionemu.gameserver.ai2.AISubState;
 import com.aionemu.gameserver.ai2.AITemplate;
+import com.aionemu.gameserver.ai2.event.AIEventType;
 import com.aionemu.gameserver.ai2.poll.AIQuestion;
 import com.aionemu.gameserver.configs.main.AIConfig;
 import com.aionemu.gameserver.controllers.NpcController;
@@ -58,6 +61,8 @@ import com.aionemu.gameserver.world.WorldPosition;
 import com.aionemu.gameserver.world.WorldType;
 import com.aionemu.gameserver.world.geo.GeoService;
 import com.google.common.base.Preconditions;
+
+import ai.AggressiveNpcAI2;
 
 /**
  * This class is a base class for all in-game NPCs, what includes: monsters and npcs that player can talk to (aka
@@ -350,7 +355,19 @@ public class Npc extends Creature {
 			super.clearAttackedCount();
 			getGameStats().renewLastChangeTargetTime();
 			if (!getLifeStats().isAlreadyDead()) {
+				
 				PacketSendUtility.broadcastPacket(this, new SM_LOOKATOBJECT(this));
+				if(creature!=null && !((Creature)this instanceof Player)) {
+					 MapRegion map = this.getActiveRegion();
+					 if( map!=null&& !GeoService.getInstance().canSee(this, creature) && !MathUtil.isInRange(this, creature, 15)) {
+							try {
+								getAi2().onGeneralEvent(AIEventType.TARGET_GIVEUP);
+								return;
+							}catch (Exception e) {
+							 return ;
+						}
+					}
+				}
 			}
 		}
 	}

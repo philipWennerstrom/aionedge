@@ -25,6 +25,7 @@ import java.util.concurrent.Future;
 import javolution.util.FastMap;
 
 import com.aionemu.commons.utils.Rnd;
+import com.aionemu.gameserver.controllers.PlayerController;
 import com.aionemu.gameserver.controllers.attack.AttackStatus;
 import com.aionemu.gameserver.controllers.observer.ActionObserver;
 import com.aionemu.gameserver.controllers.observer.AttackCalcObserver;
@@ -730,6 +731,11 @@ public class Effect implements StatOwner {
 				}
 			
 			}
+			
+			if(effector instanceof Player) {
+				((PlayerController) effector.getController()).setLastAttack();
+			}
+			
 			template.applyEffect(this);
 			template.startSubEffect(this);
 		}

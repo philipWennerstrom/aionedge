@@ -434,6 +434,28 @@ public class PlayerController extends CreatureController<Player> {
 		super.attackTarget(target, time);
 
 	}
+	
+	public void setLastAttack() {
+		PlayerGameStats gameStats = getOwner().getGameStats();
+		int attackSpeed = gameStats.getAttackSpeed().getCurrent();
+
+		long milis = System.currentTimeMillis();
+		// network ping..
+		if (milis - lastAttackMilis + 300 < attackSpeed) {
+			// hack
+			return;
+		}
+		lastAttackMilis = milis;
+
+	}
+	
+	public long getLastAttackTime() {
+		return lastAttackMilis;
+	}
+	
+	public long getLastAttackedTime() {
+		return lastAttackedMilis;
+	}
 
 	@Override
 	public void onAttack(Creature creature, int skillId, TYPE type, int damage, boolean notifyAttack, LOG log) {
