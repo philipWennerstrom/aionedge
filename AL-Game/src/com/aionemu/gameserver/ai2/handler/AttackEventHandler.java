@@ -91,9 +91,7 @@ public class AttackEventHandler {
 		}else {
 			if (npcAI.getOwner().getTarget() != null && npcAI.getOwner().getTarget() instanceof Player) {
 				Player player = (Player) npcAI.getOwner().getTarget();
-				
-				PlayerController targetController = (PlayerController) npcAI.getOwner().getTarget().getController();
-				Date playerAttackedAt = new Date(targetController.getLastAttackTime());
+				PlayerController targetController = (PlayerController) player.getController();
 				Duration attackedFrom = new Duration(targetController.getLastAttackedTime(), System.currentTimeMillis());
 				long attackedAtFromNow = attackedFrom.getStandardSeconds();
 
@@ -102,7 +100,7 @@ public class AttackEventHandler {
 					Duration du = new Duration(npcMc.getLastMoveUpdate(), System.currentTimeMillis());
 					long secFromLastNpcMove = du.getStandardSeconds();
 					
-					if (secFromLastNpcMove > 4 && attackedAtFromNow > 5) {
+					if (secFromLastNpcMove > 2 && attackedAtFromNow > 6) {
 						npcAI.onGeneralEvent(AIEventType.TARGET_GIVEUP);
 						
 						Util.printSection( "Fixing Geo bug exploit - Player: "+ player.getAcountName()+ "-- > " + " Npc: "+npcAI.getOwner().getName());
